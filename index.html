@@ -12,11 +12,92 @@
             href="./images/favicon-32x32.png"
         />
 
+        <!-- Font -->
+        <link
+            href="https://fonts.googleapis.com/css2?family=Barlow&family=Barlow+Condensed:wght@400;700&display=swap"
+            rel="stylesheet"
+        />
+
         <title>Frontend Mentor | Project tracking intro component</title>
 
         <link rel="stylesheet" type="text/css" href="style.css" />
     </head>
     <body>
+        <div id="container">
+            <!-- Navbar -->
+            <nav>
+                <div id="logoDiv">
+                    <img id="logo" src="images/logo.svg" alt="Logo" />
+                </div>
+
+                <!-- Button for toggling the menu on mobile -->
+                <input type="checkbox" id="menuActive" />
+                <label id="menuButton" for="menuActive">
+                    <img
+                        id="openMenuButton"
+                        class="menuToggleButton"
+                        src="images/icon-hamburger.svg"
+                        alt="Open menu button"
+                    />
+                    <img
+                        id="closeMenuButton"
+                        class="menuToggleButton"
+                        src="images/icon-close.svg"
+                        alt="Close menu button"
+                    />
+                </label>
+
+                <!-- Menu -->
+                <div id="navLinks">
+                    <a class="navLink" href="#">Product</a>
+                    <a class="navLink" href="#">Features</a>
+                    <a class="navLink" href="#">Pricing</a>
+                    <p id="navDot">•</p>
+                    <div id="navDivider"></div>
+                    <a class="navLink" href="#">Login</a>
+                </div>
+            </nav>
+
+            <!-- General page content -->
+            <div id="pageContainer">
+                <div id="section1" class="section">
+                    <div id="smallParagraph">
+                        <p id="smallFocus">New</p>
+                        <p>Monograph Dashboard</p>
+                    </div>
+
+                    <!-- Page title -->
+                    <p id="title">
+                        Powerful insights <br id="titleBreak" />into your team
+                    </p>
+                    <p id="description">
+                        Project planning and time tracking <br />
+                        for agile teams
+                    </p>
+
+                    <!-- Page CTAs -->
+                    <div id="pageCTA">
+                        <button id="mainCTA">
+                            Schedule a demo
+                        </button>
+                        <p id="CTAText">
+                            To see a live preview
+                        </p>
+                    </div>
+                </div>
+                <div id="section2" class="section">
+                    <img
+                        id="productPreview"
+                        src="images/illustration-devices.svg"
+                        alt="Product preview"
+                    />
+                </div>
+            </div>
+
+            <!-- Background/page decoration -->
+            <div id="backgroundDecoration"></div>
+        </div>
+
         <!-- Frontend mentor attribution -->
         <footer>
             <p class="attribution">
